@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Keukenhof - Taman Bunga di Belanda</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(to bottom, #ffe6f0, #ffd6e8);
+            color: #4a004a;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff8fab, #ffb6c1);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        nav {
+            background-color: #ff6f91;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+            animation: fadeUp 1.2s ease-in-out;
+        }
+
+        h2 {
+            color: #cc3366;
+            margin-bottom: 15px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(255, 105, 180, 0.2);
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: #ffb6c1;
+            color: #4a004a;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .floating-flower {
+            position: fixed;
+            font-size: 28px;
+            animation: float 6s infinite ease-in-out;
+            opacity: 0.7;
+        }
+
+        .flower1 { top: 20%; left: 5%; animation-delay: 0s; }
+        .flower2 { top: 50%; right: 5%; animation-delay: 2s; }
+        .flower3 { bottom: 15%; left: 10%; animation-delay: 4s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Floating Emojis -->
+<div class="floating-flower flower1">🌸</div>
+<div class="floating-flower flower2">🌷</div>
+<div class="floating-flower flower3">🌺</div>
+
+<header>
+    <h1>🌷 Keukenhof 🌷</h1>
+    <p>Taman Bunga Terindah di Dunia 🌸</p>
+</header>
+
+<nav>
+    <a href="#home">🏠 Home</a>
+    <a href="#sejarah">📜 Sejarah</a>
+    <a href="#fakta">✨ Fakta</a>
+    <a href="#galeri">🖼 Galeri</a>
+    <a href="#kontak">📩 Kontak</a>
+</nav>
+
+<section id="home">
+    <div class="card">
+        <h2>🏠 Home</h2>
+        <p>
+            Selamat datang di website Keukenhof 🌷, taman bunga terbesar di dunia yang terletak di Belanda 🇳🇱.
+            Setiap musim semi, jutaan bunga mekar dan menciptakan pemandangan yang indah, cerah, dan menenangkan hati 💗.
+            Website ini dibuat untuk menambah wawasan tentang alam dan keindahan bunga.
+        </p>
+    </div>
+</section>
+
+<section id="sejarah">
+    <div class="card">
+        <h2>📜 Sejarah</h2>
+        <p>
+            Keukenhof dibuka pertama kali pada tahun 1949 sebagai tempat pameran bunga 🌼.
+            Nama Keukenhof berarti "taman dapur", karena dahulu wilayah ini digunakan untuk menanam tanaman dapur kerajaan 👑.
+            Seiring waktu, taman ini berkembang menjadi ikon wisata Belanda dan dikenal di seluruh dunia 🌍.
+        </p>
+    </div>
+</section>
+
+<section id="fakta">
+    <div class="card">
+        <h2>✨ Fakta Menarik</h2>
+        <ul>
+            <li>🌷 Keukenhof memiliki lebih dari 7 juta bunga yang ditanam setiap tahun.</li>
+            <li>🌸 Bunga yang paling terkenal di sini adalah tulip.</li>
+            <li>🗓 Taman ini hanya dibuka sekitar dua bulan setiap tahun.</li>
+            <li>🎨 Setiap musim memiliki tema berbeda.</li>
+            <li>🌍 Keukenhof dikunjungi wisatawan dari berbagai negara.</li>
+            <li>😊 Melihat bunga dapat meningkatkan suasana hati dan membuat pikiran lebih tenang.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="galeri">
+    <div class="card">
+        <h2>🖼 Galeri Keukenhof</h2>
+        <div class="gallery">
+            <img src="tulip1.jpg" alt="Taman bunga Keukenhof 1">
+            <img src="tulip2.jpg" alt="Taman bunga Keukenhof 2">
+            <img src="tulip3.jpg" alt="Pintu masuk Keukenhof">
+            <img src="tulip4.jpg" alt="Taman tulip Keukenhof1">
+            <img src="tulip5.jpg" alt="Taman tulip Keukenhof2">
+        </div>
+    </div>
+</section>
+
+<section id="kontak">
+    <div class="card">
+        <h2>📩 Kontak</h2>
+        <p>
+            Website ini dibuat sebagai media pembelajaran tentang alam 🌿 dan taman bunga 🌸.
+            Jika ingin mengetahui lebih lanjut, kamu bisa mencari informasi resmi tentang Keukenhof di internet.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Website Edukasi Keukenhof | Tema Pink 💗</p>
+    <p>Dibuat oleh: <strong>Keysa Nur Aulia</strong> 🌷</p>
+</footer>
+
+</body>
+</html>
